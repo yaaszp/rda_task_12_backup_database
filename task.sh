@@ -32,12 +32,5 @@ mysql --user="$USER" --password="$PASSWORD" ShopDBReserve < ShopDB_backup.sql
 # Restore the data backup of ShopDB to the database ShopDBDevelopment
 mysql --user="$USER" --password="$PASSWORD" ShopDBDevelopment < ShopDB_only_data_backup.sql
 
-# In order to set a schedule for backuping you need to execute the next steps:
-# Execute command:
-# crontab -e
-# you open file for editing
-# write there the next code
-# 0 0 * * * /path_to_script/task.sh
-# safe crone file
-# Note! This (0 0 * * *) pattern starts backup every night at 00:00 every day
+
 
